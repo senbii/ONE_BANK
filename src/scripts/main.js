@@ -1,14 +1,21 @@
 function convertCurrency(conversionType) {
+  const usdInput = document.getElementById('usd');
+  const berriesInput = document.getElementById('berries');
+  let usd, berries;
+
   if (conversionType === 'usdToBerries') {
-    const usd = document.getElementById('usd').value;
-    const berries = usd * 17;
-    document.getElementById('usd-result').innerText = `${usd} USD is equal to ${berries} Berries.`;
+    usd = usdInput.value;
+    berries = usd * 17;
+    berriesInput.value = berries;
   } else if (conversionType === 'berriesToUsd') {
-    const berries = document.getElementById('berries').value;
-    const usd = berries / 17;
-    document.getElementById('berries-result').innerText = `${berries} Berries is equal to ${usd.toFixed(2)} USD.`;
+    berries = berriesInput.value;
+    usd = berries / 17;
+    usdInput.value = usd.toFixed(2);
   }
 }
+
+document.getElementById('usd').addEventListener('input', () => convertCurrency('usdToBerries'));
+document.getElementById('berries').addEventListener('input', () => convertCurrency('berriesToUsd'));
 
 window.onscroll = function() {
   const backToTopButton = document.getElementById('back-to-top');
