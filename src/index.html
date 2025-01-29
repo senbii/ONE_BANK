@@ -10,7 +10,16 @@
   <body>
     <header>
       <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="ONE BANK" style="height: 77px" />
+        <img
+          src="assets/images/logo.png"
+          alt="ONE BANK"
+          style="
+            height: 77px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 5px;
+          "
+        />
       </a>
       <nav>
         <ul>
@@ -26,12 +35,35 @@
         <h2>Your Adventure Awaits!</h2>
         <p>Join us in navigating the seas of finance with ONE BANK.</p>
       </section>
-
       <section id="services">
         <h2>Our Services</h2>
         <p>Explore our banking services tailored for your needs.</p>
+        <h3>Currency Converter</h3>
+        <div id="currency-converter">
+          <div class="converter">
+            <label for="usd">USD:</label>
+            <input
+              type="number"
+              id="usd"
+              name="usd"
+              required
+              oninput="convertCurrency('usdToBerries')"
+            />
+            <p id="usd-result"></p>
+          </div>
+          <div class="converter">
+            <label for="berries">Berries:</label>
+            <input
+              type="number"
+              id="berries"
+              name="berries"
+              required
+              oninput="convertCurrency('berriesToUsd')"
+            />
+            <p id="berries-result"></p>
+          </div>
+        </div>
       </section>
-
       <section id="about">
         <h2>About ONE BANK</h2>
         <p>
@@ -39,20 +71,39 @@
           in One Piece.
         </p>
         <h3>Our employees</h3>
-        <img
-          src="assets/images/luffy.png"
-          alt="luffy"
-          height="200"
-          id="poster"
-        />
-        <img src="assets/images/zoro.png" alt="zoro" height="200" id="poster" />
-        <img
-          src="assets/images/robin.png"
-          alt="robin"
-          height="200"
-          id="poster"
-        />
-        <img src="assets/images/barhat.png" alt="barhat" id="poster">
+        <div class="employee-container">
+          <div class="employee">
+            <img
+              src="assets/images/luffy.png"
+              alt="luffy"
+              height="200"
+              id="poster"
+            />
+            <p>Luffy - The adventurous and fearless leader.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/zoro.png"
+              alt="zoro"
+              height="200"
+              id="poster"
+            />
+            <p>Zoro - The loyal and strong swordsman.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/robin.png"
+              alt="robin"
+              height="200"
+              id="poster"
+            />
+            <p>Robin - The intelligent and resourceful archaeologist.</p>
+          </div>
+          <div class="employee">
+            <img src="assets/images/barhat.png" alt="barhat" id="poster" />
+            <p>Barhat - The mysterious and strategic planner.</p>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -60,6 +111,11 @@
       <div class="footer-content">
         <div class="footer-left">
           <p>The middle of the Calm Belt, Impel Down</p>
+          <img
+            src="assets/images/logo.png"
+            alt="ONE BANK"
+            style="height: 117px; border-radius: 10px; padding: 5px"
+          />
         </div>
         <div class="footer-right">
           <h2>Contact Us</h2>
@@ -94,6 +150,8 @@
         </p>
       </div>
     </footer>
+
+    <button id="back-to-top" onclick="scrollToTop()">&#8679;</button>
 
     <script src="scripts/main.js"></script>
   </body>
