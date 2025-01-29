@@ -1,0 +1,21 @@
+{
+  "name": "one-bank",
+  "version": "1.0.0",
+  "description": "ONE BANK - A desktop banking application inspired by One Piece.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "banking",
+    "one piece",
+    "web application"
+  ],
+  "author": "Baktiiar",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
