@@ -27,6 +27,9 @@ window.onscroll = function() {
 };
 
 function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  document.documentElement.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
