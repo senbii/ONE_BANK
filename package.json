@@ -19,6 +19,7 @@
     "marine card"
   ],
   "author": "barhat",
+  "author": "barhat",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
