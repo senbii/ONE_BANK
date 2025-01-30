@@ -24,7 +24,9 @@
       <nav>
         <ul>
           <li><button onclick="scrollToSection('home')">Home</button></li>
-          <li><button onclick="scrollToSection('services')">Services</button></li>
+          <li>
+            <button onclick="scrollToSection('products')">Products</button>
+          </li>
           <li><button onclick="scrollToSection('about')">About Us</button></li>
         </ul>
       </nav>
@@ -35,33 +37,40 @@
         <h2>Your Adventure Awaits!</h2>
         <p>Join us in navigating the seas of finance with ONE BANK.</p>
       </section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <p>Explore our banking services tailored for your needs.</p>
-        <h3>Currency Converter</h3>
-        <div id="currency-converter">
-          <div class="converter">
-            <label for="usd">USD:</label>
-            <input
-              type="number"
-              id="usd"
-              name="usd"
-              required
-              oninput="convertCurrency('usdToBerries')"
+      <section id="products">
+        <h2>Our Products</h2>
+        <p>Explore our unique banking products tailored for your needs.</p>
+        <div class="product-container">
+          <div class="wanted-card">
+            <img
+              src="assets/images/wanted_card.png"
+              alt="Wanted Poster"
+              class="wanted-poster"
             />
           </div>
-          <div class="arrow-container">
-            <span class="arrow-text">USD to Berries</span>
-            <div class="arrow">&#8596;</div>
+          <div class="product-description">
+            <h3>Wanted Poster Card</h3>
+            <p>
+              This card is designed like a wanted poster. It can only be used to
+              get money if you turn in wanted pirates. You cannot use the money
+              on this card for any other purpose.
+            </p>
           </div>
-          <div class="converter">
-            <label for="berries">Berries:</label>
-            <input
-              type="number"
-              id="berries"
-              name="berries"
-              required
-              oninput="convertCurrency('berriesToUsd')"
+        </div>
+        <div class="product-container">
+          <div class="product-description">
+            <h3>Marine Card</h3>
+            <p>
+              This card is designed for marines. It has all the benefits of
+              every card. The only problem is that you cannot have it unless you
+              are truly free.
+            </p>
+          </div>
+          <div class="marine-card">
+            <img
+              src="assets/images/marine_card.png"
+              alt="Marine Card"
+              class="marine-poster"
             />
           </div>
         </div>
@@ -104,6 +113,43 @@
           <div class="employee">
             <img src="assets/images/barhat.png" alt="barhat" id="poster" />
             <p>Barhat - The mysterious and strategic planner.</p>
+          </div>
+        </div>
+      </section>
+      <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-container">
+          <div class="review-box">
+            <p>"ONE BANK is the best! They helped me save so much money."</p>
+            <p>- John Doe</p>
+          </div>
+          <div class="review-box">
+            <p>
+              "I love ONE BANK! Their services are top-notch. The only issue I
+              have even had was a fight against Zoro."
+            </p>
+            <p>- Sanji</p>
+          </div>
+          <div class="review-box">
+            <p>"This bank is amazing. I never had any issues."</p>
+            <p>- Emily Johnson</p>
+          </div>
+          <div class="review-box">
+            <p>
+              "ONE BANK is good but sometimes their service is slow. Mostly
+              because of Luffy..."
+            </p>
+            <p>- Nami</p>
+          </div>
+          <div class="review-box">
+            <p>"I not happy with ONE BANK. They charge too much fees."</p>
+            <p>- Akainu</p>
+          </div>
+          <div class="review-box">
+            <p>
+              "Great bank! Not very helpful staff and not excellent services."
+            </p>
+            <p>- Garp</p>
           </div>
         </div>
       </section>
