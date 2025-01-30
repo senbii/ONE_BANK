@@ -36,42 +36,85 @@
       <section id="home">
         <h2>Your Adventure Awaits!</h2>
         <p>Join us in navigating the seas of finance with ONE BANK.</p>
+        <div class="news">
+          <h3>Latest News</h3>
+          <p>
+            We have opened a donation! Please scan the QR code below to donate.
+          </p>
+          <div class="qr-code-box">
+            <img src="assets/images/donation_qr.png" alt="qr_code" id="qr_code">
+          </div>
+        </div>
       </section>
       <section id="products">
         <h2>Our Products</h2>
-        <p>Explore our unique banking products tailored for your needs.</p>
-        <div class="product-container">
-          <div class="wanted-card">
-            <img
-              src="assets/images/wanted_card.png"
-              alt="Wanted Poster"
-              class="wanted-poster"
+        
+        <div class="converter">
+          <h3>Currency Converter</h3>
+        <div id="currency-converter">
+          <div class="converter">
+            <label for="usd">USD:</label>
+            <input
+              type="number"
+              id="usd"
+              name="usd"
+              required
+              oninput="convertCurrency('usdToBerries')"
             />
+            <p id="usd-result"></p>
           </div>
-          <div class="product-description">
-            <h3>Wanted Poster Card</h3>
-            <p>
-              This card is designed like a wanted poster. It can only be used to
-              get money if you turn in wanted pirates. You cannot use the money
-              on this card for any other purpose.
-            </p>
+          <div class="arrow-container">
+            <span class="arrow-text">USD to Berries</span>
+            <div class="arrow">&#8596;</div>
+          </div>
+          <div class="converter">
+            <label for="berries">Berries:</label>
+            <input
+              type="number"
+              id="berries"
+              name="berries"
+              required
+              oninput="convertCurrency('berriesToUsd')"
+            />
+            <p id="berries-result"></p>
           </div>
         </div>
-        <div class="product-container">
-          <div class="product-description">
-            <h3>Marine Card</h3>
-            <p>
-              This card is designed for marines. It has all the benefits of
-              every card. The only problem is that you cannot have it unless you
-              are truly free.
-            </p>
+
+        <div>
+          <h2>Explore our unique banking products tailored for your needs.</h2>
+          <div class="product-container">
+            <div class="wanted-card">
+              <img
+                src="assets/images/wanted_card.png"
+                alt="Wanted Poster"
+                class="wanted-poster"
+              />
+            </div>
+            <div class="product-description">
+              <h3>Wanted Poster Card</h3>
+              <p>
+                This card is designed like a wanted poster. It can only be used to
+                get money if you turn in wanted pirates. You cannot use the money
+                on this card for any other purpose.
+              </p>
+            </div>
           </div>
-          <div class="marine-card">
-            <img
-              src="assets/images/marine_card.png"
-              alt="Marine Card"
-              class="marine-poster"
-            />
+          <div class="product-container">
+            <div class="product-description">
+              <h3>Marine Card</h3>
+              <p>
+                This card is designed for marines. It has all the benefits of
+                every card. The only problem is that you cannot have it unless you
+                are truly free.
+              </p>
+            </div>
+            <div class="card marine-card">
+              <img
+                src="assets/images/marine_card.png"
+                alt="Marine Card"
+                class="marine-card-img"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -81,37 +124,100 @@
           ONE BANK is inspired by the spirit of adventure and camaraderie found
           in One Piece.
         </p>
-        <h3>Our employees</h3>
+        <h3>Our Employees</h3>
         <div class="employee-container">
           <div class="employee">
             <img
               src="assets/images/luffy.png"
-              alt="luffy"
-              height="200"
+              alt="Monkey D. Luffy"
+              height="300"
               id="poster"
             />
-            <p>Luffy - The adventurous and fearless leader.</p>
+            <p>Monkey D. Luffy - The adventurous and fearless leader.</p>
           </div>
           <div class="employee">
             <img
               src="assets/images/zoro.png"
-              alt="zoro"
-              height="200"
+              alt="Roronoa Zoro"
+              height="300"
               id="poster"
             />
-            <p>Zoro - The loyal and strong swordsman.</p>
+            <p>Roronoa Zoro - The loyal and strong swordsman.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/nami.png"
+              alt="Nami"
+              height="300"
+              id="poster"
+            />
+            <p>Nami - The intelligent and resourceful navigator.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/usopp.png"
+              alt="Usopp"
+              height="300"
+              id="poster"
+            />
+            <p>Usopp - The brave and creative sniper.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/sanji.png"
+              alt="Sanji"
+              height="300"
+              id="poster"
+            />
+            <p>Sanji - The skilled and chivalrous cook.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/chopper.png"
+              alt="Tony Tony Chopper"
+              height="300"
+              id="poster"
+            />
+            <p>Tony Tony Chopper - The adorable and talented doctor.</p>
           </div>
           <div class="employee">
             <img
               src="assets/images/robin.png"
-              alt="robin"
-              height="200"
+              alt="Nico Robin"
+              height="300"
               id="poster"
             />
-            <p>Robin - The intelligent and resourceful archaeologist.</p>
+            <p>Nico Robin - The knowledgeable and enigmatic archaeologist.</p>
           </div>
           <div class="employee">
-            <img src="assets/images/barhat.png" alt="barhat" id="poster" />
+            <img
+              src="assets/images/franky.png"
+              alt="Franky"
+              height="300"
+              id="poster"
+            />
+            <p>Franky - The eccentric and inventive shipwright.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/brook.png"
+              alt="Brook"
+              height="300"
+              id="poster"
+            />
+            <p>Brook - The lively and musical skeleton.</p>
+          </div>
+          <div class="employee">
+            <img
+              src="assets/images/jinbe.png"
+              alt="Jinbe"
+              height="300"
+              id="poster"
+            />
+            <p>Jinbe - The honorable and powerful helmsman.</p>
+          </div>
+          <div class="employee">
+            <img src="assets/images/barhat.png" alt="Barhat" height="300" id="poster" />
             <p>Barhat - The mysterious and strategic planner.</p>
           </div>
         </div>

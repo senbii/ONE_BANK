@@ -52,7 +52,7 @@ nav button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 1.2rem;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 nav button:hover {
@@ -108,8 +108,7 @@ nav button:hover {
   font-weight: bold;
 }
 
-.converter input,
-.converter select {
+.converter input {
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -162,29 +161,90 @@ nav button:hover {
 .wanted-card {
   flex: 1;
   transform: rotate(-5deg);
+  margin: 10px;
 }
 
 .wanted-poster {
   width: 100%;
-  border: 1px solid #ddd;
+  max-width: 300px;
+  border: 3px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.marine-card-container {
+  flex-direction: row-reverse;
 }
 
 .marine-card {
   flex: 1;
   transform: rotate(5deg);
+  margin: 10px;
 }
 
-.marine-poster {
+.marine-card-img {
+  margin: 10px;
   width: 100%;
-  border: 1px solid #ddd;
+  max-width: 300px;
+  border: 3px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-description {
   flex: 2;
+}
+
+.news-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.qr-code-box {
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#qr_code {
+  width: 100%;
+}
+
+.arc {
+  margin-bottom: 20px;
+}
+
+.crew-member {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image-box {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  flex: 1;
 }
 
 .review-container {
@@ -244,54 +304,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.button {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #218838;
-}
-
-.card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-}
-
-main {
-  padding: 20px;
-}
-
-.address {
-  margin-left: 20px;
-  font-size: 1em;
-  color: white;
-}
-
-#poster {
-  margin: 10px;
-  padding: 10px;
-  height: 370px;
-}
-
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -303,7 +315,7 @@ main {
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.5rem;
-  display: none;
+  /* display: none; */
 }
 
 #back-to-top:hover {
