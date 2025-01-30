@@ -1,6 +1,6 @@
 # ONE BANK
 
-Welcome to the ONE BANK project, a desktop banking application inspired by the world of animanga One Piece. This application aims to provide a user-friendly interface for banking services while incorporating elements from the beloved series.
+Welcome to ONE BANK, a fictional banking website inspired by the spirit of adventure and camaraderie found in One Piece. This project showcases various banking products and services with a unique twist.
 
 ## Project Structure
 
@@ -21,16 +21,19 @@ ONE_BANK
 
 ## Features
 
-- User-friendly interface for banking services
-- Responsive design for various devices
-- Interactive elements for a seamless user experience
-- Thematic elements inspired by One Piece
+- **Currency Converter**: Convert between USD and Berries.
+- **Wanted Poster Card**: A card designed like a wanted poster, used to get money by turning in wanted pirates.
+- **Marine Card**: A card designed for marines with all the benefits of every card, but can only be used by those who are truly free.
+- **News Section**: Latest news and updates.
+- **Employee Section**: Meet the employees inspired by the Straw Hat Pirates from One Piece.
+- **Customer Reviews**: Read what our customers have to say about ONE BANK.
 
-## Setup Instructions
+## Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/ONE_BANK.git
+   ```bash
+   git clone https://github.com/yourusername/one-bank.git
+   cd one-bank
    ```
 
 2. Navigate to the project directory:
