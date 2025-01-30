@@ -1,20 +1,25 @@
 {
   "name": "one-bank",
   "version": "1.0.0",
-  "description": "ONE BANK - A desktop banking application inspired by One Piece.",
-  "main": "src/index.html",
+  "description": "A fictional banking website inspired by One Piece.",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server src",
-    "build": "echo 'Build process not defined yet.'"
+    "start": "live-server --open=src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senbii/ONE_BANK"
   },
   "keywords": [
-    "banking",
+    "bank",
     "one piece",
-    "web application"
+    "currency converter",
+    "wanted poster",
+    "marine card"
   ],
-  "author": "Baktiiar",
+  "author": "barhat",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "live-server": "^1.2.1"
   }
